@@ -1,7 +1,6 @@
 const slide = document.querySelectorAll(".slide");
 let index = 0;
 
-
 function nextSlide(){
     slide[index].classList.remove('active');
     index++;
