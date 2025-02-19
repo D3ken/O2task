@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.scss">
 </head>
 <body>
     <header>
@@ -33,7 +33,7 @@
                                     <li class="top-line__nav-li">
                                         <a href="#" class="nav_link">
                                             Юридическим лицам
-                                            <img src="./imgs/arrow.svg" alt="#">
+                                            <img class="nav_link" src="./imgs/arrow.svg" alt="#">
                                         </a>
                                     </li>
                                 </ul>
@@ -106,11 +106,52 @@
                                 <img src="./imgs/ticket.svg" alt="#">
                                 <p>Скидки и акции</p>
                             </div> 
+                            <div class="bottom-line__fees">
+                                <img src="./imgs/ticket.svg" alt="#">
+                                <p>Скидки и акции</p>
+                            </div> 
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </header>
+    <main>
+        <div class="slider-block">
+            <div class="container">
+                <div class="slider">
+                    <div class="arrow prev-arrow" onclick="prevSlide()">
+                        <img src="./imgs/slideArrow.svg" alt="#">
+                    </div>
+                    <div class="wrapper">
+                        <div class="slide s1 active">
+                            <img src="./imgs/2=3.svg" alt="#">
+                            <img src="./imgs/на все книги.svg" alt="#">
+                        </div>
+                        <div class="slide s2">
+                            <img src="./imgs/2=3.svg" alt="#">
+                            <img src="./imgs/на все книги.svg" alt="#">
+                        </div>
+                        <div class="slide s3">
+                            <img src="./imgs/2=3.svg" alt="#">
+                            <img src="./imgs/на все книги.svg" alt="#">
+                        </div>
+                        <div class="slide s4">
+                            <img src="./imgs/2=3.svg" alt="#">
+                            <img src="./imgs/на все книги.svg" alt="#">
+                        </div>
+                        <div class="slide s5">
+                            <img src="./imgs/2=3.svg" alt="#">
+                            <img src="./imgs/на все книги.svg" alt="#"> 
+                        </div>
+                    </div>
+                    <div class="arrow next-arrow" onclick="nextSlide()">
+                        <img src="./imgs/slideArrow.svg" alt="#">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="main.js"></script>
 </body>
 </html>
